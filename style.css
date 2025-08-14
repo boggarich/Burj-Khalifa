@@ -94,6 +94,10 @@ p{
 
 @media screen and (max-width: 400px) {
 
+    .timeline-grid {
+      padding: 21px 0;
+    }
+
     body {
         background-size: 100%;
     }
