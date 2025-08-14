@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --root-bg: #111;
+    --content-bg: #0b0b0b;
+    --sidebar-bg: #1a1a1a;
+    --theme-bg: #323336;
+    --theme-border-color: #1f1f1f;
+    --text-color: #fff;
+    --scrollbar-color: #333;
+    --toogle-bg: #2bc46b
+}
+
+body {
+    font-family: 'Bodoni Moda', 'Inter', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, transparent, transparent 20%, var(--content-bg) 50%, var(--content-bg) 100%), url("https://images.pexels.com/photos/37848/burj-khalifa-dubai-skyscraper-u-a-e-37848.jpeg");
+    color: #fff;
+    font-size: 13px;
+    padding: 17px;
+    min-height: 100vh;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0px 0;
+}
+
+h1 {
+    font-family: 'Manrope', 'Inter', sans-serif;
+}
+
+.timeline-wrapper {
+  position: relative;
+  margin-top: 4rem;
+  margin: 0 auto;
+}
+
+.left-timeline .text-wrapper {
+    padding-right: 17px;
+}
+
+.right-timeline .text-wrapper {
+    padding-left: 17px;
+}
+
+.dotted-line {
+  height: 100%;
+  width: 1px;
+  background: linear-gradient(180deg, var(--theme-border-color) 50%, transparent 50%);
+  background-size: 1px 8px;
+  background-repeat: repeat;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(-50%);
+
+}
+
+.timeline-grid {
+  display: grid;
+  grid: auto/ repeat(2, 1fr);
+}
+
+.d-flex {
+  display: flex;
+  align-items: center
+  
+}
+
+p{
+  font-size: 14px;
+}
+
+.theme-pill {
+  padding: 7px 9px;
+  background: var(--sidebar-bg);
+  border: 1px solid var(--theme-bg);
+  border-radius: 5px;
+  flex-shrink: 0;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.connector {
+  height: 2px;
+  width: 100%;
+  background-color: var(--theme-border-color);
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        background-size: 100%;
+    }
+
+    .timeline-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .timeline-grid {
+        padding: 21px;
+    }
+
+    .timeline-wrapper {
+        width: 43%;
+    }
+}
