@@ -14,7 +14,7 @@
 body {
     font-family: 'Bodoni Moda', 'Inter', sans-serif;
     overflow-x: hidden;
-    background: linear-gradient(to bottom, transparent, transparent 20%, var(--content-bg) 50%, var(--content-bg) 100%), url("https://images.pexels.com/photos/37848/burj-khalifa-dubai-skyscraper-u-a-e-37848.jpeg");
+    background: linear-gradient(to bottom, transparent, var(--content-bg) 50%, var(--content-bg) 100%), url("https://images.pexels.com/photos/37848/burj-khalifa-dubai-skyscraper-u-a-e-37848.jpeg");
     color: #fff;
     font-size: 13px;
     padding: 17px;
